@@ -229,6 +229,18 @@ parameters:
             count: 1
             path: src/Form/FormMapper.php
 
+        -
+            # will be fixed in v4. Currently BC break
+            message: "#^Method Sonata\\\\AdminBundle\\\\Datagrid\\\\Pager::next\\(\\) with return type void returns mixed but should not return anything\\.$#"
+            count: 1
+            path: src/Datagrid/Pager.php
+
+        -
+            # will be fixed in v4. Currently BC break
+            message: "#^Method Sonata\\\\AdminBundle\\\\Datagrid\\\\Pager::rewind\\(\\) with return type void returns mixed but should not return anything\\.$#"
+            count: 1
+            path: src/Datagrid/Pager.php
+
 # next 6 errors are due to not installed Doctrine ORM\ODM
         -
             message: "#^Class Doctrine\\\\ODM\\\\MongoDB\\\\PersistentCollection not found\\.$#"
